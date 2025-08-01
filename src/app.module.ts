@@ -7,7 +7,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { SanitizeMiddleware } from './common/middleware/sanitize.midleware';
 import { MediaModule } from './media/media.module';
-import { OrganizationsModule } from './organizations/organizations.module';
 
 @Module({
   imports: [
@@ -22,7 +21,6 @@ import { OrganizationsModule } from './organizations/organizations.module';
     UsersModule,
     AuthModule,
     MediaModule,
-    OrganizationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
